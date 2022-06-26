@@ -3,7 +3,7 @@
     function getParameters() {
         const searchParams = new URLSearchParams(window.location.search);
         var productId=searchParams.get("product");
-        var url="intent://theinqr.com/#Intent;scheme=tta://$productId;package=com.tta.qr;end";
+        var url="intent://theinqr.com/#Intent;scheme=tta://samsung;package=com.tta.qr;end";
         document.getElementById("q").value=productId;
           window.location.replace(url);
          setTimeout(fallbackToStore, 700);
